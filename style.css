@@ -1,0 +1,209 @@
+body{
+  background: #EC6F66;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F3A183, #EC6F66); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+html , body{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+}
+.Projects{
+  width: 100%;
+  height: 100vh;
+}
+
+.about{
+  width: 100%;
+  height: 100vh;
+}
+
+.contact{
+  width: 100%;
+  height: 100vh;
+}
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 42px;
+  text-transform: uppercase;
+  padding: 0.4em 1em;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 42px;
+  text-transform: uppercase;
+  padding: 0.4em 1em;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+}
+
+.rev-block{
+  position: absolute;
+}
+
+.rev-block span{
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  animation-delay: 1.4s;
+}
+
+.rev-block:after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #00f0b5;
+  animation: rev-block 1.5s  cubic-bezier(0.19,1,0.22,1) forwards;
+  animation-delay: 1s;
+}
+
+ @keyframes rev-block {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@keyframes appear-text {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+#surname{
+  top: 51%;
+  left: 40%;
+}
+
+
+#surname span{
+  animation-delay: 2s;
+}
+
+#surname.rev-block:after{
+  background: #5e239d;
+  animation-delay: 1.5s;
+}
+
+@media only screen and (max-width:900px) {
+  h1{
+    font-size: 20px;
+    padding: 0.4em;
+  }
+}
+
+
+.intro{
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 42px;
+  padding: 0.4em 1em;
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+
+}
+
+
+.intro p{
+  opacity: 0;
+  animation: appear-text 0.0005s linear forwards;
+  animation-delay: 3s;
+}
+
+.contactMain{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.contactMain img{
+  opacity: 0;
+  animation: appear-text 0.0005s linear forwards;
+  animation-delay: 4s;
+}
+
+#Pcontent{
+  padding-top: 100px;
+
+}
+
+#Pcontent h3{
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+#Acontent{
+  padding-top: 100px;
+}
+
+#Acontent h3{
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+
+.aboutText{
+  color: #fff;
+  text-transform: uppercase;
+}
+.title{
+  color: #fff;
+  text-transform: uppercase;
+}
+#skill{
+  /* list-style-type: none; */
+  color: #fff;
+}
+
+
+.social{
+  padding-top: 30px;
+  color: #fff;
+}
+
+.social a{
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.footer{
+  padding-top: 150px;
+}
